@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_signup"
+    tools:context=".Signup">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="287dp"
+        android:layout_height="169dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
+        app:srcCompat="@drawable/quizmelogo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteX="16dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="CREATE AN ACCOUNT"
+                android:textColor="@color/colorPurple"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_signup" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:hint="name"
+                android:drawableTint="@color/purple_500"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text"
+                android:drawableLeft="@drawable/user"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/email"
+                android:drawableTint="@color/purple_500"
+                android:hint="email"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/password"
+                android:drawableTint="@color/purple_500"
+                android:hint="password"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/user"
+                android:drawableTint="@color/purple_500"
+                android:hint="refer code"
+                android:layout_margin="5dp"
+                android:background="@drawable/edit_text"/>
+            <Button
+                android:id="@+id/create"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="continue"
+                app:backgroundTint="@null"
+                android:background="@drawable/button_1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:padding="15dp"/>
+            <Button
+                android:id="@+id/signup_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="already have account"
+                android:padding="15dp"
+                android:layout_marginTop="10dp"
+                app:backgroundTint="@null"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="20sp"
+                android:onClick="gotoSignup"
+                android:background="@drawable/button_2"
+                />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="By signing up you agree to our privacy policy and terms and conditions."
+                android:textSize="10sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
